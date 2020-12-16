@@ -495,4 +495,28 @@ button:hover {
   background-color: #000000;
   border-radius: 5px;
 }
+
+.articles__items {
+  display: flex;
+  justify-content: center;
+}
+
+.articles__items--item {
+  margin-right: 35px;
+  width: 350px;
+  background: #FFFFFF;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  position: relative;
+}
+
+.articles__items--item:last-child {
+  margin-right: 0;
+}
+
+.articles__items--img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 24px;
+}
 /*# sourceMappingURL=style.css.map */
