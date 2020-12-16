@@ -494,6 +494,11 @@ button {
             color: #4089ED;
             position: relative;
             width: 100px;
+
+            &:hover {
+                text-decoration: underline; 
+                opacity: 0.7;
+            }
             
             &::after {
                 content: '';
@@ -503,10 +508,85 @@ button {
                 background: url(../img/article/arrow.svg);
                 background-repeat: no-repeat;
                 top: 7px;
-                right: -30px;
+                right: -25px;
             }
+
+
         }
     }
     
-    
+    &__view {
+        display: flex;
+        justify-content: center;
+
+        &--btn {
+            @include buttons;
+            padding: 0 65px;
+            margin-top: 70px;
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding: 118px 24px 113px;
+    color: #FFFFFF;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        &--trafalgar {
+            width: 391px;
+            margin-right: 150px;
+
+            &-logo {
+                display: flex;
+            }
+
+            &-img {
+                width: 20px;
+                height: 20px;
+                padding: 5px 13px;
+                background: #ffffff;
+                border-radius: 100px;
+            }
+
+            &-second {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0 0 22px 12px;
+
+            }
+
+            &-text {
+                @include footer-font;
+                margin-bottom: 31px;
+            }
+            &-copy {
+                @include footer-font;
+            }
+        }
+
+        &--items {
+            margin-right: 150px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &-name {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 60px
+            }
+
+            &-link {
+                
+                font-size: 18px;
+                line-height: 38px;
+            }
+        }
+    }
 }
