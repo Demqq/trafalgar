@@ -79,6 +79,11 @@ button:hover {
   background-position: -45px -20px;
 }
 
+.consult img {
+  position: relative;
+  right: -50px;
+}
+
 .main {
   display: flex;
   margin-top: 85px;
@@ -91,7 +96,6 @@ button:hover {
   font-size: 48px;
   line-height: 56px;
   color: #000000;
-  mix-blend-mode: normal;
   margin-bottom: 25px;
 }
 
@@ -100,7 +104,6 @@ button:hover {
   font-size: 21px;
   line-height: 32px;
   color: #7D7987;
-  mix-blend-mode: normal;
   margin-bottom: 45px;
 }
 
@@ -241,6 +244,10 @@ button:hover {
 
 .about {
   margin-top: 220px;
+  background: url(../img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 250px;
 }
 
 .healthcare {
@@ -249,8 +256,14 @@ button:hover {
   align-items: center;
 }
 
+.healthcare__img {
+  position: relative;
+  left: -50px;
+}
+
 .healthcare__inner {
   width: 420px;
+  margin-right: 50px;
 }
 
 .healthcare__inner--title {
@@ -259,8 +272,8 @@ button:hover {
   line-height: 56px;
   color: #000000;
   mix-blend-mode: normal;
-  position: relative;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .healthcare__inner--title::after {
@@ -307,6 +320,11 @@ button:hover {
   margin-top: 230px;
 }
 
+.download__img {
+  position: relative;
+  right: -50px;
+}
+
 .download__inner {
   width: 420px;
 }
@@ -317,8 +335,8 @@ button:hover {
   line-height: 56px;
   color: #000000;
   mix-blend-mode: normal;
-  position: relative;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .download__inner--title::after {
@@ -361,5 +379,120 @@ button:hover {
 
 .download__inner--btn img {
   margin-left: 15px;
+}
+
+.opinions {
+  margin-bottom: 216px;
+}
+
+.opinions .slider {
+  width: 1120px;
+  margin: 0 auto 42px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%), url(../img/header-bg.svg);
+  border-radius: 24px;
+  padding: 64px 118px 90px;
+}
+
+.opinions .slider__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 95px;
+  position: relative;
+}
+
+.opinions .slider__title::after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 48%;
+  width: 56px;
+  height: 2px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.opinions .slider__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opinions .slider__inner--left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opinions .slider__inner--information {
+  margin-left: 40px;
+}
+
+.opinions .slider__inner--information-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.opinions .slider__inner--information-proffesion {
+  font-size: 18px;
+  line-height: 48px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.opinions .slider__inner--right {
+  width: 420px;
+}
+
+.opinions .slider__inner--right-opinion {
+  font-size: 19px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.opinions .slider__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinions .slider__btns img {
+  margin-right: 90px;
+}
+
+.opinions .slider__btns img:last-child {
+  margin-right: 0;
+}
+
+.articles {
+  padding: 0 0 200px 0;
+}
+
+.articles__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.articles__inner--title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+  position: relative;
+  margin-bottom: 115px;
+}
+
+.articles__inner--title::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 44%;
+  width: 56px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -36,7 +36,7 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-
+ 
     .menu {
         
         &__main {
@@ -78,6 +78,11 @@ button {
     background: url(../img/header-bg.svg);
     background-repeat: no-repeat;
     background-position:  -45px -20px;
+
+    img {
+        position: relative;
+        right: -50px;
+    }
 }
 
 .main {
@@ -93,7 +98,6 @@ button {
             font-size: 48px;
             line-height: 56px;
             color: #000000;
-            mix-blend-mode: normal;
             margin-bottom: 25px;
         }
 
@@ -102,7 +106,6 @@ button {
             font-size: 21px;
             line-height: 32px;
             color: $main-font-color;
-            mix-blend-mode: normal;
             margin-bottom: 45px;
         }
 
@@ -223,6 +226,10 @@ button {
 
 .about {
     margin-top: 220px;
+   background: url(../img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position:  right;
+    margin-bottom: 250px;
 }
 
 .healthcare {
@@ -230,12 +237,19 @@ button {
     justify-content: space-between;
     align-items: center;
 
+    &__img {
+        position: relative;
+        left: -50px;
+    }
+
     &__inner {
         width: 420px;
+        margin-right: 50px;
 
         &--title {
             @include headers;
             margin-bottom: 60px;
+            position: relative;
 
             &::after {
                 content: '';
@@ -272,12 +286,18 @@ button {
     flex-direction: row-reverse;
     margin-top: 230px;
 
+    &__img {
+        position: relative;
+        right: -50px;
+    }
+
     &__inner {
         width: 420px;
 
         &--title {
             @include headers;
             margin-bottom: 60px;
+            position: relative;
 
             &::after {
                 content: '';
@@ -311,5 +331,119 @@ button {
     }
 }
 
+.opinions {
+    margin-bottom: 216px;
+
+    .slider {
+        width: 1120px;
+        margin: 0 auto 42px;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%),
+        url(../img/header-bg.svg);
+        border-radius: 24px;
+        padding: 64px 118px 90px;
+
+        &__title {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 95px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 70px;
+                left: 48%;
+                width: 56px;
+                height: 2px;
+                background-color: #FFFFFF;
+                border-radius: 5px;
+            }
+        }
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &--information {
+
+                margin-left: 40px;
+
+                &-name {
+                    font-weight: bold;
+                    font-size: 22px;
+                    
+                    color: #FFFFFF;
+                }
+
+                &-proffesion {
+                    font-size: 18px;
+                    line-height: 48px;
+                    color: rgba(255, 255, 255, 0.85);
+                }
+            }
+
+            &--right {
+                width: 420px;
+
+                &-opinion {
+                    font-size: 19px;
+                    line-height: 30px;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+            }
+        }
+
+        &__btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-right: 90px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+}
 
 
+.articles {
+    padding: 0 0 200px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        
+        &--title {
+            @include headers;
+            position: relative;
+            margin-bottom: 115px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 90px;
+                left: 44%;
+                width: 56px;
+                height: 2px;
+                background-color: #000000;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    
+}
