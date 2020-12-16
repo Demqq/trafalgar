@@ -514,9 +514,47 @@ button:hover {
   margin-right: 0;
 }
 
+.articles__items--item-inner {
+  padding: 0 51px 35px 31px;
+}
+
 .articles__items--img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-bottom: 24px;
+}
+
+.articles__items--title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.articles__items--text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #7D7987;
+  margin-bottom: 25px;
+}
+
+.articles__items--link {
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ED;
+  position: relative;
+  width: 100px;
+}
+
+.articles__items--link::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  background: url(../img/article/arrow.svg);
+  background-repeat: no-repeat;
+  top: 7px;
+  right: -30px;
 }
 /*# sourceMappingURL=style.css.map */
