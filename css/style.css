@@ -605,21 +605,23 @@ button:hover {
 
 .footer__inner--trafalgar-logo {
   display: flex;
-}
-
-.footer__inner--trafalgar-img {
-  width: 20px;
-  height: 20px;
-  padding: 5px 13px;
-  background: #ffffff;
-  border-radius: 100px;
-}
-
-.footer__inner--trafalgar-second {
+  align-items: center;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   margin: 0 0 22px 12px;
+}
+
+.footer__inner--trafalgar-t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5B9BF3;
+  margin-right: 15px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  width: 41px;
+  height: 41px;
 }
 
 .footer__inner--trafalgar-text {
@@ -650,5 +652,9 @@ button:hover {
 .footer__inner--items-link {
   font-size: 18px;
   line-height: 38px;
+}
+
+.footer__inner--items-link a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

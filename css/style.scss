@@ -542,23 +542,27 @@ button {
 
             &-logo {
                 display: flex;
-            }
-
-            &-img {
-                width: 20px;
-                height: 20px;
-                padding: 5px 13px;
-                background: #ffffff;
-                border-radius: 100px;
-            }
-
-            &-second {
+                align-items: center;
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 30px;
                 margin: 0 0 22px 12px;
 
             }
+
+            &-t {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #5B9BF3;
+                margin-right: 15px;
+                background-color: #FFFFFF;
+                border-radius: 100px;
+                width: 41px;
+                height: 41px;
+
+            }
+
 
             &-text {
                 @include footer-font;
@@ -586,6 +590,13 @@ button {
                 
                 font-size: 18px;
                 line-height: 38px;
+
+                a{
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
